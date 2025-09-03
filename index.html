@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savor the Perfect Brew | Riverside Bakery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">RIVERSIDE BAKERY</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                              
+                <li><a href="#contact-form-section">Contact</a></li>
+                <div class="feature-card">
+                                <button id="theme-toggle">Dark Mode</button>
+            </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Savor the Perfect Brew!</h1>
+                <p>Experience the rich aroma and exquisite flavors of our freshly brewed coffee and baked goods. </p>
+            </div>
+        </section>
+
+        <section id="menu" class="product-grid">
+            <h2>Our Menu</h2>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x400/?espresso" alt="Espresso">
+                    <h3>Espresso</h3>
+                    <p>A bold and rich shot of our finest beans.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x400/?latte" alt="Latte">
+                    <h3>Latte</h3>
+                    <p>Smooth, creamy, and topped with delicate foam.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x400/?cold-brew" alt="Cold Brew">
+                    <h3>Cold Brew</h3>
+                    <p>Refreshing and perfectly smooth.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://source.unsplash.com/400x400/?coffee" alt="Coffee">
+                    <h3>Drip Coffee</h3>
+                    <p>The classic cup, brewed to perfection.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="interactive-features">
+            <h2>Interactive Features</h2>
+            
+            
+
+            <div class="feature-card">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <h4 class="faq-question">What ingredients do you use?</h4>
+                    <p class="faq-answer">We use only the finest, locally-sourced ingredients to ensure every bite is delicious.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Do you offer custom designs?</h4>
+                    <p class="faq-answer">Yes, we love custom orders! Please use our form below to tell us about your dream cake.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form-section">
+            <h2>Contact Us</h2>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error" id="password-error"></span>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="success-message" class="success-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Riverside Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
